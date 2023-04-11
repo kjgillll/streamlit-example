@@ -3,7 +3,6 @@ import altair as alt
 import math
 import pandas as pd
 import streamlit as st
-pip install beautifulsoup4
 
 from bs4 import BeautifulSoup
 
