@@ -20,8 +20,8 @@ BeautifulSoup Scaper Testing
 
 URL = "https://devbusiness.un.org/content/site-search"
 r = requests.get(URL)
-soup = BeautifulSoup(r.content, 'html.parser')
-st.write(soup)
+soup = BeautifulSoup(r.content, 'html5lib')
+st.write(soup.prettify())
 
 # from urllib3.util.ssl_ import create_urllib3_context
 
