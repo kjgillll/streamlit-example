@@ -6,6 +6,7 @@ import streamlit as st
 import requests
 import certifi
 import urllib3
+import html5lib
 
 from bs4 import BeautifulSoup
 
