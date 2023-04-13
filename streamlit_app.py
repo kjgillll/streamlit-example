@@ -19,7 +19,7 @@ BeautifulSoup Scaper Testing
 # verify = "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/site-packages/certifi/cacert.pem"
 
 URL = "https://devbusiness.un.org/content/site-search"
-r = requests.get(URL, verify="/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/site-packages/certifi/cacert.pem")
+r = requests.get(URL)
 st.write(r.content)
 
 
