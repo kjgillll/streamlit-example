@@ -2,3 +2,5 @@ altair
 pandas
 streamlit
 beautifulsoup4
+certifi
+urllib3
