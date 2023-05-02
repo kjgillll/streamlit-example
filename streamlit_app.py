@@ -28,7 +28,7 @@ soup = BeautifulSoup(r.content, 'html5lib')
 json = requests.get("https://devbusiness.un.org/solr-sitesearch-output/10//0/ds_field_last_updated/desc?bundle_fq=procurement_notice&sm_vid_Institutions_fq=&sm_vid_Procurement_Type_fq=&sm_vid_Countries_fq=&sm_vid_Sectors_fq=&sm_vid_Languages_fq=&sm_vid_Notice_Type_fq=&deadline_multifield_fq=&ts_field_project_name_fq=&label_fq=&sm_field_db_ref_no__fq=&sm_field_loan_no__fq=&dm_field_deadlineFrom_fq=&dm_field_deadlineTo_fq=&ds_field_future_posting_dateFrom_fq=&ds_field_future_posting_dateTo_fq=&bm_field_individual_consulting_fq=").json()
 devb = json["response"]["docs"]
 
-var devbArray = []
+devbArray = []
 
 #json["response"]["docs"][index]["url"]
 #json["response"]["docs"][index]["label"]
