@@ -38,8 +38,8 @@ devbArray = []
 for x in devb:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
     devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
-
-st.write(devbArray)
+df = pd.Dataframe(devbArray)
+st.write(df)
 #st.write(json["response"]["docs"][4])
 
 # from urllib3.util.ssl_ import create_urllib3_context
