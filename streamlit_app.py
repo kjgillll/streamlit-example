@@ -37,7 +37,7 @@ devbArray = []
 #json["response"]["docs"][index]["timestamp"]
 for x in devb:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-    devbArray.push({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
+    devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
 
 st.write(devbArray)
 #st.write(json["response"]["docs"][4])
