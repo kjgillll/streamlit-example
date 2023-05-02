@@ -34,8 +34,8 @@ devb = json["response"]["docs"]
 #json["response"]["docs"][index]["sm_vid_Notice_type"]
 #json["response"]["docs"][index]["timestamp"]
 for x in devb:
-    st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-
+    #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
+    st.write(x["label"])
 #st.write(json["response"]["docs"][4])
 
 # from urllib3.util.ssl_ import create_urllib3_context
