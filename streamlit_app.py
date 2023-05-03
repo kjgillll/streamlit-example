@@ -50,25 +50,25 @@ devbArray = []
 #json["response"]["docs"][index]["timestamp"]
 for x in devb:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-    if x["sm_vid_Countries"][0] in countries: devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
+    if x["sm_vid_Countries"][0] in countries: devbArray.append({"Label": x["ts_field_project_name"], "URL": x["url"], "Country": x["sm_vid_Countries"][0], "Deadline": x["ds_field_deadline"]})
 for x in devb2:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-    if x["sm_vid_Countries"][0] in countries: devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
+    if x["sm_vid_Countries"][0] in countries: devbArray.append({"Label": x["ts_field_project_name"], "URL": x["url"], "Country": x["sm_vid_Countries"][0], "Deadline": x["ds_field_deadline"]})
 for x in devb3:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-    if x["sm_vid_Countries"][0] in countries: devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
+    if x["sm_vid_Countries"][0] in countries: devbArray.append({"Label": x["ts_field_project_name"], "URL": x["url"], "Country": x["sm_vid_Countries"][0], "Deadline": x["ds_field_deadline"]})
 for x in devb4:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-    if x["sm_vid_Countries"][0] in countries: devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
+    if x["sm_vid_Countries"][0] in countries: devbArray.append({"Label": x["ts_field_project_name"], "URL": x["url"], "Country": x["sm_vid_Countries"][0], "Deadline": x["ds_field_deadline"]})
 for x in devb5:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-    if x["sm_vid_Countries"][0] in countries: devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
+    if x["sm_vid_Countries"][0] in countries: devbArray.append({"Label": x["ts_field_project_name"], "URL": x["url"], "Country": x["sm_vid_Countries"][0], "Deadline": x["ds_field_deadline"]})
 for x in devb6:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-    if x["sm_vid_Countries"][0] in countries: devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
+    if x["sm_vid_Countries"][0] in countries: devbArray.append({"Label": x["ts_field_project_name"], "URL": x["url"], "Country": x["sm_vid_Countries"][0], "Deadline": x["ds_field_deadline"]})
 for x in devb7:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-    if x["sm_vid_Countries"][0] in countries: devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
+    if x["sm_vid_Countries"][0] in countries: devbArray.append({"Label": x["ts_field_project_name"], "URL": x["url"], "Country": x["sm_vid_Countries"][0], "Deadline": x["ds_field_deadline"]})
 
 df = pd.DataFrame(devbArray);
 
