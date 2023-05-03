@@ -84,7 +84,7 @@ for x in devb8:
 for x in devb9:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
     if x["sm_vid_Countries"][0].lower() in countries: devbArray.append({"Label": x["ts_field_project_name"], "URL": x["url"], "Country": x["sm_vid_Countries"][0], "Deadline": x["ds_created"]})
-for x in dev10:
+for x in devb10:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
     if x["sm_vid_Countries"][0].lower() in countries: devbArray.append({"Label": x["ts_field_project_name"], "URL": x["url"], "Country": x["sm_vid_Countries"][0], "Deadline": x["ds_created"]})
 for x in devb11:
