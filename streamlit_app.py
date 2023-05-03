@@ -19,6 +19,8 @@ BeautifulSoup Scaper Testing
 # # print(certifi.where())
 # verify = "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/site-packages/certifi/cacert.pem"
 
+countries = ["Jamaica","Trinidad","Tobago","Guyana","Suriname","Bahamas","Belize","Guadeloupe","Martinque","Barbados","Curacao","Saint Lucia","Grenada","Aruba","Saint Vincent","The Grenedines","United States Virgin Islands","Antigua","Barbuda","Dominica","Cayman Islands","Saint Kitts and Nevis","Turks and Caicos","Sint Maarten","Anguilla","Montserrat"]
+
 URL = "https://devbusiness.un.org/content/site-search"
 headers = {'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246"}
 r = requests.get(URL, headers=headers)
@@ -48,26 +50,26 @@ devbArray = []
 #json["response"]["docs"][index]["timestamp"]
 for x in devb:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-    devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
+    if x["sm_vid_Countries"] in countries: devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
 for x in devb2:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-    devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
+    if x["sm_vid_Countries"] in countries: devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
 for x in devb3:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-    devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
+    if x["sm_vid_Countries"] in countries: devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
 for x in devb4:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-    devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
+    if x["sm_vid_Countries"] in countries: devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
 for x in devb5:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-    devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
+    if x["sm_vid_Countries"] in countries: devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
 for x in devb6:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-    devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
+    if x["sm_vid_Countries"] in countries: devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
 for x in devb7:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-    devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
-    
+    if x["sm_vid_Countries"] in countries: devbArray.append({"label": x["label"], "url": x["url"], "timestamp": x["timestamp"]})
+
 df = pd.DataFrame(devbArray);
 
 st.write(df)
