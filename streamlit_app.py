@@ -19,7 +19,7 @@ BeautifulSoup Scaper Testing
 # # print(certifi.where())
 # verify = "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/site-packages/certifi/cacert.pem"
 
-countries = ["Jamaica","Trinidad","Tobago","Guyana","Suriname","Bahamas","Belize","Guadeloupe","Martinque","Barbados","Curacao","Saint Lucia","Grenada","Aruba","Saint Vincent","The Grenedines","United States Virgin Islands","Antigua","Barbuda","Dominica","Cayman Islands","Saint Kitts and Nevis","Turks and Caicos","Sint Maarten","Anguilla","Montserrat"]
+countries = ["jamaica","trinidad and tobago","guyana","suriname","bahamas","belize","guadeloupe","martinque","barbados","curacao","saint lucia","grenada","aruba","saint vincent and the grenedines","united states virgin islands","antigua and barbuda","dominica","cayman islands","saint kitts and nevis","turks and caicos","sint maarten","anguilla","montserrat"]
 
 URL = "https://devbusiness.un.org/content/site-search"
 headers = {'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246"}
@@ -50,7 +50,7 @@ devbArray = []
 #json["response"]["docs"][index]["timestamp"]
 for x in devb:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
-    if x["sm_vid_Countries"][0] in countries: devbArray.append({"Label": x["ts_field_project_name"], "URL": x["url"], "Country": x["sm_vid_Countries"][0], "Deadline": x["ds_created"]})
+    if x["sm_vid_Countries"][0].lower() in countries: devbArray.append({"Label": x["ts_field_project_name"], "URL": x["url"], "Country": x["sm_vid_Countries"][0], "Deadline": x["ds_created"]})
 for x in devb2:
     #st.write(x["url"]+x["label"]+x["ts_field_project_name"]+x["sm_vid_Notice_type"]+x["timestamp"])
     if x["sm_vid_Countries"][0] in countries: devbArray.append({"Label": x["ts_field_project_name"], "URL": x["url"], "Country": x["sm_vid_Countries"][0], "Deadline": x["ds_created"]})
